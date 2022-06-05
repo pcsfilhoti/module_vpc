@@ -21,7 +21,3 @@ variable "availability_zones" {
 variable "private_subnets_cidr" {
   type = list(string)
 }
-
-variable "cluster_name" {
-  type = string
-}
