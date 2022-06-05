@@ -47,8 +47,6 @@ resource "aws_subnet" "public" {
   tags = {
     Name = "${var.env}-${element(var.availability_zones, count.index)}-public"
     Env  = var.env
-    "kubernetes.io/role/elb"    = "1"
-    "kubernetes.io/cluster/${var.cluster_name}" = "owned"
   }
 }
 
